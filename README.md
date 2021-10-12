@@ -8,7 +8,7 @@ The hello-world project
 ## Project structure
 ```
 .
-├── hello-world
+├── json-utils
 │   ├── pom.xml
 │   ...
 ├── pom.xml
@@ -20,13 +20,7 @@ The hello-world project
 
 ```shell
 $ mvn clean package
-$ java -jar hello-world/target/hello-world-0.0.1-SNAPSHOT.jar
-```
-
-```shell
-Compare str1==str2: true
-Compare str3==str4: false
-Compare value str1.equals(str3): true
+$ java -jar json-utils/target/json-utils-0.0.1-SNAPSHOT.jar
 ```
 
 ## Contribute
