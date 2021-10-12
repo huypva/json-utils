@@ -26,3 +26,5 @@ $ java -jar json-utils/target/json-utils-0.0.1-SNAPSHOT.jar
 ## Contribute
 
 ## Reference
+- https://www.baeldung.com/jackson-annotations
+- https://www.baeldung.com/jackson-object-mapper-tutorial
