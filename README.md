@@ -1,7 +1,7 @@
 The hello-world project
 
 <div align="center">
-    <img src="./assets/images/hello_world.png"/>
+    <img src="./assets/images/json-utils.png"/>
 </div>
 
 
