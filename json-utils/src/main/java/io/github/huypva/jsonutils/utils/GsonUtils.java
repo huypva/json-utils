@@ -1,4 +1,4 @@
-package io.codebyexample.jsonutils.utils;
+package io.github.huypva.jsonutils.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

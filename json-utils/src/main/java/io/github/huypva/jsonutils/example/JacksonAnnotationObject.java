@@ -1,5 +1,6 @@
-package io.codebyexample.jsonutils.example;
+package io.github.huypva.jsonutils.example;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -11,12 +12,12 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class GsonAnnotationObject {
+public class JacksonAnnotationObject {
 
-  @SerializedName("object_id")
+  @JsonAlias("object_id")
   public int objectId;
 
-  @SerializedName("object_name")
+  @JsonAlias("object_name")
   public String objectName;
 
 }

@@ -1,8 +1,10 @@
-package io.codebyexample.jsonutils.utils;
+package io.github.huypva.jsonutils.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 /**
  * @author huypva
@@ -35,4 +37,13 @@ public class JacksonUtils {
     }
   }
 
+  public static JsonNode getField(String jsonString, String fieldName)
+      throws JacksonParserException {
+    try {
+      ObjectNode node = new ObjectMapper().readValue(jsonString, ObjectNode.class);
+      return node.get(fieldName);
+    } catch (JsonProcessingException e) {
+      throw new JacksonParserException(e);
+    }
+  }
 }

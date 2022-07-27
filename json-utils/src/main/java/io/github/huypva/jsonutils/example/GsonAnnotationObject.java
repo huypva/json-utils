@@ -1,5 +1,6 @@
-package io.codebyexample.jsonutils.example;
+package io.github.huypva.jsonutils.example;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -10,10 +11,12 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class SampleObject {
+public class GsonAnnotationObject {
 
+  @SerializedName("object_id")
   public int objectId;
 
+  @SerializedName("object_name")
   public String objectName;
 
 }

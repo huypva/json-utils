@@ -1,4 +1,4 @@
-package io.codebyexample.jsonutils.utils;
+package io.github.huypva.jsonutils.utils;
 
 /**
  * @author huypva
